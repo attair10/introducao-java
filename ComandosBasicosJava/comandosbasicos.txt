@@ -1,0 +1,27 @@
+
+Verificar quais versões JAVA tenho no JABBA local
+
+atta@atta:~/introducao-java$ jabba ls
+openjdk@1.11.0
+openjdk@1.10.0
+
+Usar uma versão
+
+atta@atta:~/introducao-java$ jabba use openjdk@1.11.0
+
+Criar o arquivo compilado
+
+atta@atta:~/introducao-java$ javac -d target/ -sourcepath src/ src/com/dio/MyFirstProgram.java
+
+Acessa a pasta onde o arquivo compilado foi criado
+
+atta@atta:~/introducao-java$ cd taregt/com/dio
+
+Lista e verifica de o arquivo para ser compilado foi criado
+
+atta@atta~/introducao-java/target/com/dio$ ls
+base  MyFirstProgram.class
+
+Executa o arquivo, entra na pasta target
+
+atta@atta:~/introducao-java/target$ java com.dio.MyFirstProgram
